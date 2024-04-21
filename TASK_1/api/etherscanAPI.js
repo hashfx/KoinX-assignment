@@ -1,6 +1,7 @@
 // fetch and store transaction
 
 const axios = require('axios');
+const Transaction = require('../schema/transaction');
 
 exports.getTransactions = async (req, res) => {
     const address = req.params.address;
@@ -13,6 +14,10 @@ exports.getTransactions = async (req, res) => {
         
         // filter for "Normal" transactions
         const normalTransactions = transactions.filter(tx => tx.txreceipt_status === '1');
+
+        // store transactions in MongoDB
+        await Transaction.insertMany(normalTransactions.map(tx => ({ ...tx, address })));
+
         res.json(normalTransactions);
     } catch (error) {
         console.error(error);

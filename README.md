@@ -30,7 +30,7 @@ node index.js
 + Test API
     + go to your browser and type ```localhost:3000/transactions/YOUR_ADDRESS```
     + replace YOUR_ADDRESS with a transaction or wallet address
-</detail>
+</details>
 
 <!-- TASK 2 -->
 <details>
@@ -48,7 +48,7 @@ npm install
 node index.js
 ```
 
-</detail>
+</details>
 
 <!-- TASK 3 -->
 <details>
@@ -67,4 +67,4 @@ node index.js
 </details>
 
 <!-- End -->
-<center>Thanking You: developed by <a herf="https://hashfx.github.io/Portfolio2022">HARSH SONI</a></center>
+<p align="center">Thanking You: developed by <a href="https://hashfx.github.io/Portfolio2022">HARSH SONI</a></p>

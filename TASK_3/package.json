@@ -6,7 +6,7 @@
     "express": "^4.19.2",
     "install": "^0.13.0",
     "mongodb": "^6.5.0",
-    "mongoose": "^8.3.2",
+    "mongoose": "^8.8.3",
     "node-cron": "^3.0.3",
     "npm": "^10.5.2"
   }
